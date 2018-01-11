@@ -45,7 +45,7 @@ def can_get_size_of_the_database
 end
 
 def can_find_the_first_item_from_the_database_using_id
-  Movie.find(1)
+  Movie.find(1).title
 end
 
 def can_find_by_multiple_attributes
@@ -58,7 +58,7 @@ end
 def can_find_using_where_clause_and_be_sorted
   # For this test return all movies released after 2002 and ordered by
   # release date descending
-  Movie.where(release_date > 2002).order_by(release_date DESC)
+  Movie.where(:release_date > 2002).order_by(:release_date DESC)
 end
 
 def can_be_found_updated_and_saved
