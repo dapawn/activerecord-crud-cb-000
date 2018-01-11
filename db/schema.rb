@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20180111213134) do
 
-  create_table "students", force: :cascade do |t|
+  create_table "movies", force: :cascade do |t|
     t.string   "title"
     t.datetime "release_date"
     t.string   "director"
