@@ -24,10 +24,10 @@ end
 
 def can_be_created_in_a_block
   Movie.create do |m|
-    m.title = "Home Alone",
-    m.release_date = 1990,
-    m.director = "Unknown",
-    m.lead = "The blond haired kid",
+    m.title = "Home Alone"
+    m.release_date = 1990
+    m.director = "Unknown"
+    m.lead = "The blond haired kid"
     m.in_theaters = false
   end
 end
